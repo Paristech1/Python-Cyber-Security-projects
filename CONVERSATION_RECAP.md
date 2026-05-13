@@ -23,10 +23,16 @@ This document tracks the core concepts and lessons learned during the creation o
 
 ---
 
-## 💻 Terminal & Environment
-*   **cd (Change Directory)**: How to move between "rooms" (folders) in your computer.
-*   **ls (List)**: How to look around and see what files are in your current room.
-*   **The Python REPL (>>>)**: If you see `>>>`, you are *inside* the Python language. You must type `exit()` to get back to the normal Terminal commands.
+## 🛡️ Project 3: File Integrity Checker
+**Goal**: Use SHA-256 cryptographic hashes to detect if files have been tampered with or deleted.
+
+### Key Lessons:
+*   **Cryptographic Hashes**: A fixed-length "fingerprint" of a file's data.
+*   **The Avalanche Effect**: Changing one bit of data results in a completely different hash.
+*   **Efficiency (Chunking)**: Reading large files in small pieces (`8192` bytes) so the computer's memory doesn't get overwhelmed.
+*   **JSON Baselines**: Storing "Known Good" states in a structured format for easy comparison.
+*   **sys.argv**: Using command-line arguments to make one script perform multiple tasks (like `check` vs `create`).
 
 ---
+
 *Follow along at: https://github.com/Paristech1/Python-Cyber-Security-projects*
